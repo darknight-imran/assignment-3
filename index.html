@@ -22,6 +22,8 @@
                         clifford: '#da373d',
                         'arrow-primary': '#ABEF5F',
                         'btn-primary': '#ABEF5F',
+                        'bg-primary': '#f4f4f4',
+                        'bg-secondary': '#FFFFFF',
                     }
                 }
             }
@@ -31,6 +33,19 @@
     <style>
         .manrope-fonts {
             font-family: "Manrope", sans-serif;
+        }
+
+        .bg-img {
+            background-image: url('/assets/Vector.png');
+            background-repeat: no-repeat;
+            background-position-y: 120px;
+            background-position-x: 140px;
+        }
+
+        @media screen and (max-width:425px) {
+            .bg-img {
+                background-image: url('');
+            }
         }
     </style>
 </head>
@@ -100,7 +115,45 @@
         </section>
     </header>
     <main>
+        <!-- about us section -->
+        <section class="bg-bg-primary bg-img">
+            <div class="md:container mx-auto grid grid-cols-1  md:grid-cols-2 items-center gap-x-14 py-24">
+                <div class="flex-1">
+                    <div class="text-center sm:text-start">
+                        <button class="text-base font-bold bg-bg-secondary px-4 py-2 w-32 rounded-full"><i
+                                class="fa fa-arrow-right text-base"></i> About Us</button>
+                        <h2 class="text-2xl lg:text-6xl font-bold py-4">We design thoughtful, <br> liveable spaces</h2>
+                        <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <div class="flex bg-bg-secondary p-10 rounded-xl gap-6 my-6">
+                        <div>
+                            <img src="assets/commercial.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Commercial</h3>
+                            <p class="text-base font-medium">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-bg-secondary p-10 rounded-xl gap-6">
+                        <div>
+                            <img src="assets/commercial.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Commercial</h3>
+                            <p class="text-base font-medium">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                        </div>
+                    </div>
 
+
+                </div>
+                <div class="flex-1">
+                    <img class="mx-auto" width="100%" src="assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
